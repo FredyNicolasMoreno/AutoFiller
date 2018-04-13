@@ -20,9 +20,13 @@ public class Tree<T> {
 		for (Node<T> actual : current.getNodes()) {
 			if(actual.getInfo()==node.getRoot().getInfo()) {
 				actual.addNode(node);
+			}else {
+				
 			}
 		}
 	}
 	
-	
+	public Node<T> getRoot(){
+		return root;
+	}
 }
